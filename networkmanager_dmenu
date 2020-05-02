@@ -162,7 +162,7 @@ def create_other_actions(client, icon_dict):
                Action("{}Launch Connection Manager".format(icon_dict[label]), launch_connection_editor),
                Action("{}Delete a Connection".format(icon_dict[label]), delete_connection)]
     if wifi_enabled:
-        actions.append(Action("{}Rescan Wifi Networks".format(icon_dict), rescan_wifi))
+        actions.append(Action("{}Rescan Wifi Networks".format(icon_dict[label]), rescan_wifi))
     return actions
 
 
